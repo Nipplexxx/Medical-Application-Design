@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Medic</string>
+    <string name="MyString"><u>Пропустить</u></string>
+    <string name="MyString2"><u>Завершить</u></string>
+    <string name="todo">TODO</string>
+
+
+    <string-array name="categori">
+        <item>Компьютерные комплектующие</item>
+        <item>Мебель</item>
+        <item>Компьютерная переферия</item>
+    </string-array>
+</resources>
