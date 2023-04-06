@@ -8,11 +8,12 @@
 
     <TextView
         android:id="@+id/next"
-        android:layout_width="83dp"
+        android:layout_width="120dp"
         android:layout_height="27dp"
-        android:text="@string/MyString"
         android:onClick="next"
+        android:text="@string/MyString"
         android:textColor="#57A9FF"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,11 +24,12 @@
 
     <TextView
         android:id="@+id/complete"
-        android:layout_width="83dp"
+        android:layout_width="120dp"
         android:layout_height="27dp"
         android:onClick="complete"
         android:text="@string/MyString2"
         android:textColor="#57A9FF"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,6 +44,7 @@
         android:layout_height="wrap_content"
         android:text="Анализы"
         android:textColor="#00B712"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,8 +55,8 @@
 
     <TextView
         android:id="@+id/opisanie"
-        android:layout_width="241dp"
-        android:layout_height="31dp"
+        android:layout_width="240dp"
+        android:layout_height="37dp"
         android:gravity="center"
         android:text="Экспресс сбор и получение проб"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -89,7 +92,7 @@
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="231dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
@@ -97,7 +100,7 @@
 
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="231dp"
+                android:layout_width="359dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="70dp"
@@ -138,14 +141,14 @@
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="131dp"
-        android:layout_height="149dp"
+        android:layout_width="167.04dp"
+        android:layout_height="163dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.108"
+        app:layout_constraintVertical_bias="0.027"
         app:srcCompat="@drawable/shape" />
 
 

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         point1 = findViewById(R.id.point1);
         point2 = findViewById(R.id.point2);
         point3 = findViewById(R.id.point3);
-        point1.setVisibility(View.GONE);
+        point1.setVisibility(View.VISIBLE);
         point2.setVisibility(View.GONE);
         point3.setVisibility(View.GONE);
         complete.setVisibility(View.GONE);
@@ -56,17 +56,18 @@ public class MainActivity extends AppCompatActivity {
                         opisanie.setText("Вы быстро узнаете о результатах");
                         point1.setVisibility(View.VISIBLE);
                         point2.setVisibility(View.VISIBLE);
-                        if (scrollX<=1000){
+                        if (scrollX<=1100){
                             complete.setVisibility(View.GONE);
-                            point1.setVisibility(View.VISIBLE);
+                            point1.setVisibility(View.GONE);
                             point3.setVisibility(View.GONE);
                         }
-                        if (scrollX>=1000){
+                        if (scrollX>=1100){
                             analizing.setText("Мониторинг");
                             opisanie.setText("Наши врачи всегда наблюдают за вашими показателями здоровья");
                             complete.setVisibility(View.VISIBLE);
                             next.setVisibility(View.GONE);
-                            point2.setVisibility(View.VISIBLE);
+                            point1.setVisibility(View.GONE);
+                            point2.setVisibility(View.GONE);
                             point3.setVisibility(View.VISIBLE);
                         }
                     }
@@ -77,11 +78,13 @@ public class MainActivity extends AppCompatActivity {
     public static void init(){
     }
     public void next(View view) {
-        myScroll.scrollBy(800, 0);
+        //next session
+        Intent intent = new Intent(this, register_email.class);
+        startActivity(intent);
     }
     public void complete(View view) {
         //next session
-        Intent intent = new Intent(MainActivity.this, Register.class);
+        Intent intent = new Intent(this, register_email.class);
         startActivity(intent);
     }
 }

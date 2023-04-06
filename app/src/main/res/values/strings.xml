@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Medic</string>
-    <string name="MyString"><u>Пропустить</u></string>
-    <string name="MyString2"><u>Завершить</u></string>
+    <string name="MyString">Пропустить</string>
+    <string name="MyString2">Завершить</string>
     <string name="todo">TODO</string>
 
 
