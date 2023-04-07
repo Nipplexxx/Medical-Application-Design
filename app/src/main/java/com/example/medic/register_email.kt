@@ -19,7 +19,7 @@ class register_email : AppCompatActivity() {
             override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {}
             override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
                 if (findViewById<EditText>(R.id.editMail) != null) {
-                    findViewById<Button>(R.id.btninactived).isEnabled = true
+                    findViewById<Button>(R.id.btninactived).setEnabled(true)
                 }
             }
             override fun afterTextChanged(editable: Editable) {}

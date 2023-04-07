@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onScrollChange(View view, int i, int i1, int i2, int i3) {
                 int scrollX = myScroll.getScrollX();
-                System.out.println("Scam"+scrollX);
-
                 if (scrollX >=0){
                     complete.setVisibility(View.GONE);
                     next.setVisibility(View.VISIBLE);

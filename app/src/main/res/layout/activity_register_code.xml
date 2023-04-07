@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="ClickBack"
     tools:context=".register_code">
 
     <ImageView
@@ -36,10 +35,10 @@
         app:layout_constraintVertical_bias="0.161" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="219dp"
         android:layout_height="70dp"
         android:gravity="center"
-        android:onClick="ClickBack"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +47,7 @@
         app:layout_constraintVertical_bias="0.017">
 
         <EditText
-            android:id="@+id/inputcode"
+            android:id="@+id/inputcode1"
             style="@style/style_code_input"
             tools:ignore="LabelFor" />
 
@@ -68,16 +67,12 @@
             tools:ignore="LabelFor" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/countdown"
-        android:layout_width="174dp"
-        android:layout_height="39dp"
-        android:gravity="center"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Chronometer
+        android:id="@+id/view_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
