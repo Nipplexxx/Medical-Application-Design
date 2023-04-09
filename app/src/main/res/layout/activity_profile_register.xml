@@ -62,6 +62,8 @@
 
     <EditText
         android:id="@+id/editName"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
         android:hint="@string/text_name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,6 +76,8 @@
 
     <EditText
         android:id="@+id/editSurname"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
         android:hint="@string/text_surname"
         android:inputType="textPersonName"
         android:paddingStart="8dp"
@@ -87,6 +91,8 @@
 
     <EditText
         android:id="@+id/editOtchestvo"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
         android:hint="@string/text_otchestvo"
         android:inputType="textPersonName"
         android:paddingStart="8dp"
@@ -100,6 +106,8 @@
 
     <EditText
         android:id="@+id/editDateBirthday"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
         android:inputType="date"
         android:hint="@string/text_dateBirthday"
         android:paddingStart="8dp"
@@ -113,6 +121,8 @@
 
     <Spinner
         android:id="@+id/spinner"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
@@ -121,4 +131,31 @@
         app:layout_constraintVertical_bias="0.774"
         android:entries="@array/SpinerGender"
         style="@style/style_textBox_cart"/>
+
+    <Button
+        android:id="@+id/btninactived2"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#1A6FEE"
+        android:onClick="nextActivity"
+        android:text="Создать"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/btninactivedNone2"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#C9D4FB"
+        android:text="Создать"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 </androidx.constraintlayout.widget.ConstraintLayout>
