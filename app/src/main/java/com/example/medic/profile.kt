@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class MainActivity : AppCompatActivity() {
+class profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_profile)
     }
 
-    fun nextProfile(view: View){
-        val intent = Intent(this, profile::class.java)
+    fun nextMain(view: View){
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }
