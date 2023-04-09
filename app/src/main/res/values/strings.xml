@@ -3,11 +3,18 @@
     <string name="MyString">Пропустить</string>
     <string name="MyString2">Завершить</string>
     <string name="todo">TODO</string>
+    <string name="text_create_cart">Создание карты пациента</string>
+    <string name="text_blabla">Без карты пациента вы не сможете заказать анализы</string>
+    <string name="text_blablabla">В картах пациентов будут храниться результаты анализов вас и всех ваших близких.</string>
+    <string name="text_name">Имя</string>
+    <string name="text_surname">Отчество</string>
+    <string name="text_otchestvo">Фамилия</string>
+    <string name="text_dateBirthday">Дата рождения</string>
 
 
-    <string-array name="categori">
-        <item>Компьютерные комплектующие</item>
-        <item>Мебель</item>
-        <item>Компьютерная переферия</item>
+    <string-array name="SpinerGender">
+        <item>Мужской</item>
+        <item>Женский</item>
+        <item>Средний</item>
     </string-array>
 </resources>

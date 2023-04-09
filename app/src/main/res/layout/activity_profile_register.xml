@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profile_register">
+    tools:context=".register.profile_register">
+
     <TextView
         android:id="@+id/next3"
         android:layout_width="83dp"
         android:layout_height="27dp"
-        android:onClick="next"
         android:text="@string/MyString"
         android:textColor="#57A9FF"
         android:textStyle="bold"
@@ -18,14 +18,15 @@
         app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002" />
+        app:layout_constraintVertical_bias="0.060000002"
+        android:onClick="nextActivity"/>
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="293dp"
         android:layout_height="73dp"
         android:layout_marginEnd="112dp"
-        android:text="Создание карты пациента"
+        android:text="@string/text_create_cart"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -39,7 +40,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Без карты пациента вы не сможете заказать анализы"
+        android:text="@string/text_blabla"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.115"
@@ -49,23 +50,31 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="В картах пациентов будут храниться результаты анализов вас и всех ваших близких."
+        android:layout_width="388dp"
+        android:layout_height="36dp"
+        android:text="@string/text_blablabla"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195" />
+        app:layout_constraintVertical_bias="0.197" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="374dp"
-        android:layout_height="54dp"
-        android:background="@drawable/customedit"
-        android:ems="10"
-        android:hint="Имя"
+        android:id="@+id/editName"
+        android:hint="@string/text_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305"
+        style="@style/style_textBox_cart" />
+
+    <EditText
+        android:id="@+id/editSurname"
+        android:hint="@string/text_surname"
         android:inputType="textPersonName"
         android:paddingStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,15 +82,12 @@
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305" />
+        app:layout_constraintVertical_bias="0.42"
+        style="@style/style_textBox_cart"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="374dp"
-        android:layout_height="54dp"
-        android:background="@drawable/customedit"
-        android:ems="10"
-        android:hint="Имя"
+        android:id="@+id/editOtchestvo"
+        android:hint="@string/text_otchestvo"
         android:inputType="textPersonName"
         android:paddingStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -89,49 +95,30 @@
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.539"
+        style="@style/style_textBox_cart"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="374dp"
-        android:layout_height="54dp"
-        android:background="@drawable/customedit"
-        android:ems="10"
-        android:hint="Имя"
-        android:inputType="textPersonName"
+        android:id="@+id/editDateBirthday"
+        android:inputType="date"
+        android:hint="@string/text_dateBirthday"
         android:paddingStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="374dp"
-        android:layout_height="54dp"
-        android:background="@drawable/customedit"
-        android:ems="10"
-        android:hint="Имя"
-        android:inputType="textPersonName"
-        android:paddingStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658" />
+        app:layout_constraintVertical_bias="0.658"
+        style="@style/style_textBox_cart"/>
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="374dp"
-        android:layout_height="54dp"
-        android:background="@drawable/customedit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintVertical_bias="0.774"
+        android:entries="@array/SpinerGender"
+        style="@style/style_textBox_cart"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

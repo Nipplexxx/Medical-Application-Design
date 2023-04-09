@@ -1,4 +1,4 @@
-package com.example.medic;
+package com.example.medic.register;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,14 +9,16 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.medic.R;
+
+public class onBoard1_2_3 extends AppCompatActivity {
     private HorizontalScrollView myScroll;
     private TextView analizing, opisanie, next, complete;
     private ImageView point1, point2, point3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_on_board1_2_3);
         myScroll = findViewById(R.id.myScroll);
         init();
         analizing = findViewById(R.id.analizing);
