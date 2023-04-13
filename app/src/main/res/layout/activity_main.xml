@@ -292,7 +292,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/item_2" />
+                app:srcCompat="@drawable/item_2"
+                android:onClick="nextProverka"/>
 
             <ImageView
                 android:id="@+id/imageView37"

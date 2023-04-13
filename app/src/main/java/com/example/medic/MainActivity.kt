@@ -15,4 +15,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, profile::class.java)
         startActivity(intent)
     }
+
+    fun nextProverka(view: View){
+        val intent = Intent(this, proverka::class.java)
+        startActivity(intent)
+    }
 }
